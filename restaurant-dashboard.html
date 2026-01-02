@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Types and Food Provided</title>
+    <style>
+        body {
+          background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+          font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+          color: #ffffff;
+          margin: 0;
+          padding: 20px;
+          line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        nav {
+          position: sticky;
+          top: 0;
+          background: rgba(0,0,0,0.7);
+          padding: 12px 20px;
+          display: flex;
+          justify-content: center;
+          gap: 30px;
+          z-index: 1000;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        }
+
+        nav a {
+          color: #ffcc00;
+          text-decoration: none;
+          font-weight: 600;
+          transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+          color: #ff6600;
+        }
+
+        nav a.active {
+          color: #ffffff;
+          background: #ff6600;
+          padding: 6px 12px;
+          border-radius: 6px;
+        }
+
+        /* Main Title */
+        h1 {
+          text-align: center;
+          font-size: 3rem;
+          font-weight: 700;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          margin-bottom: 20px;
+          background: linear-gradient(to right, #ffcc00, #ff6600);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        /* Section Titles */
+        h2 {
+          text-align: center;
+          font-size: 2rem;
+          margin: 30px 0 20px;
+          position: relative;
+          color: #ffffff;
+        }
+
+        h2::after {
+          content: "";
+          display: block;
+          width: 60px;
+          height: 3px;
+          background: #ff6600;
+          margin: 10px auto 0;
+          border-radius: 2px;
+        }
+
+        /* Paragraphs */
+        p {
+          color: #e0e0e0;
+          font-size: 1.05rem;
+          margin-bottom: 15px;
+        }
+
+        /* Restaurant Boxes */
+        .restaurant-box {
+          background: rgba(255, 255, 255, 0.08);
+          padding: 25px;
+          margin-top: 25px;
+          border-radius: 12px;
+          box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .restaurant-box:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+        }
+
+        /* Lists */
+        ul {
+          margin-left: 20px;
+          color: #ffcc00;
+          font-weight: 500;
+          list-style-type: disc;
+        }
+
+        ul li {
+          margin-bottom: 8px;
+        }
+
+        /* Footer */
+        footer {
+          background: rgba(0,0,0,0.7);
+          text-align: center;
+          padding: 20px;
+          margin-top: 40px;
+          box-shadow: 0 -4px 12px rgba(0,0,0,0.4);
+        }
+
+        footer p {
+          margin: 8px 0;
+          color: #e0e0e0;
+          font-size: 0.95rem;
+        }
+
+        .footer-link {
+          color: #ffcc00;
+          text-decoration: none;
+          font-weight: 600;
+          transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+          color: #ff6600;
+        }
+
+        .social-icons {
+          margin-top: 10px;
+        }
+
+        .social-icons a {
+          margin: 0 10px;
+          font-size: 1.2rem;
+          color: #ffcc00;
+          text-decoration: none;
+          transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+          color: #ff6600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+      <a href="restaurant-dashboard.html" class="active">Restaurants</a>
+      <a href="ngo-dashboard.html">Orphanages & NGOs</a>
+      <a href="wildlife-dashboard.html">Wildlife Care</a>
+    </nav>
+
+    <h1>Types of Restaurants and the Food They Provide</h1>
+
+    <p>
+        Restaurants play an important role in providing food to people. Different types of restaurants
+        serve different kinds of food based on culture, budget, service style, and customer needs.
+        Understanding restaurant types helps in managing food supply and reducing food waste effectively.
+    </p>
+    <div class="restaurant-box">
+        <h2>1. Fast Food Restaurants</h2>
+        <p>
+            Fast food restaurants focus on quick service and affordable meals. Food is prepared in advance
+            or cooked very quickly. These restaurants usually have takeaway and home delivery services.
+        </p>
+        <p><strong>Food Provided:</strong></p>
+        <ul>
+            <li>Burgers</li>
+            <li>French fries</li>
+            <li>Pizza</li>
+            <li>Sandwiches</li>
+            <li>Soft drinks</li>
+        </ul>
+    </div>
+
+    <div class="restaurant-box">
+        <h2>2. Casual Dining Restaurants</h2>
+        <p>
+            Casual dining restaurants provide a comfortable seating environment with table service.
+            Food quality is better than fast food and prices are moderate.
+        </p>
+        <p><strong>Food Provided:</strong></p>
+        <ul>
+            <li>Indian meals (Dal, Rice, Roti)</li>
+            <li>Chinese food</li>
+            <li>Italian dishes</li>
+            <li>Starters and desserts</li>
+        </ul>
+    </div>
+
+    <div class="restaurant-box">
+        <h2>3. Fine Dining Restaurants</h2>
+        <p>
+            Fine dining restaurants offer premium food, luxury atmosphere, and professional service.
+            These restaurants focus on presentation, taste, and customer experience.
+        </p>
+        <p><strong>Food Provided:</strong></p>
+        <ul>
+            <li>Gourmet dishes</li>
+            <li>Multi-course meals</li>
+            <li>Seafood and steaks</li>
+            <li>Special desserts</li>
+        </ul>
+    </div>
+
+    <div class="restaurant-box">
+        <h2>4. Cafes</h2>
+        <p>
+            Cafes are informal places where people relax, work, or meet friends. They usually serve
+            light meals and beverages.
+        </p>
+        <p><strong>Food Provided:</strong></p>
+        <ul>
+            <li>Coffee and tea</li>
+            <li>Cakes and pastries</li>
+            <li>Sandwiches</li>
+            <li>Snacks</li>
+        </ul>
+    </div>
+
+    <div class="restaurant-box">
+        <h2>5. Street Food Stalls</h2>
+        <p>
+            Street food stalls provide low-cost food and are popular among students and workers.
+            Food is freshly prepared in small quantities.
+        </p>
+        <p><strong>Food Provided:</strong></p>
+        <ul>
+            <li>Pani puri</li>
+            <li>Chaat</li>
+            <li>Dosa and idli</li>
+            <li>Noodles</li>
+        </ul>
+    </div>
+
+    <div class="restaurant-box">
+        <h2>6. Buffet Restaurants</h2>
+        <p>
+            Buffet restaurants allow customers to serve themselves from a variety of dishes.
+            Proper food management is important to reduce food waste in these restaurants.
+        </p>
+        <p><strong>Food Provided:</strong></p>
+        <ul>
+            <li>Indian, Chinese, and Continental dishes</li>
+            <li>Salads and soups</li>
+            <li>Desserts</li>
+            <li>Beverages</li>
+        </ul>
+    </div>
+
+    <div class="restaurant-box">
+        <h2>Conclusion</h2>
+        <p>
+            Different types of restaurants serve different food based on customer preferences.
+            Understanding restaurant categories helps in planning food preparation, managing waste,
+            and improving sustainability in food waste management systems.
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Food Rescue Platform | Connecting Restaurants, NGOs & Wildlife Care</p>
+      <p>
+        <a href="#top" class="footer-link">Back to Top</a> | 
+        <a href="mailto:contact@foodrescue.org" class="footer-link">Contact Us</a>
+      </p>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">🌐 Facebook</a>
+        <a href="https://instagram.com" target="_blank">📸 Instagram</a>
+        <a href="https://linkedin.com" target="_blank">💼 LinkedIn</a>
+      </div>
+    </footer>
+
+</body>
+</html>

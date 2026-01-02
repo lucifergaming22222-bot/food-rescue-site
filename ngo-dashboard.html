@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Available NGOs for Food Rescue</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+      color: #ffffff;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    /* Navigation Bar */
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(0,0,0,0.7);
+      padding: 12px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    nav a {
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff6600;
+    }
+
+    nav a.active {
+      color: #ffffff;
+      background: #ff6600;
+      padding: 6px 12px;
+      border-radius: 6px;
+    }
+
+    /* Main Title */
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      background: linear-gradient(to right, #ffcc00, #ff6600);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Section Titles */
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin: 30px 0 20px;
+      position: relative;
+      color: #ffffff;
+    }
+
+    h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: #ff6600;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    /* Paragraphs */
+    p {
+      color: #e0e0e0;
+      font-size: 1.05rem;
+      margin-bottom: 15px;
+    }
+
+    /* NGO Cards */
+    .ngo-card {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 25px;
+      margin-top: 25px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .ngo-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    }
+
+    .ngo-card h3 {
+      margin-top: 0;
+      color: #ffcc00;
+    }
+
+    /* Buttons */
+    .btn-small {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background: #ff6600;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn-small:hover {
+      background: #e65c00;
+      transform: scale(1.05);
+    }
+
+    /* Lists */
+    ul {
+      margin-left: 20px;
+      color: #ffcc00;
+      font-weight: 500;
+      list-style-type: disc;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="restaurant-dashboard.html">Restaurants</a>
+    <a href="ngo-dashboard.html" class="active">Orphanages & NGOs</a>
+    <a href="wildlife-dashboard.html">Wildlife Care</a>
+  </nav>
+
+  <h1>Participating NGO Partners</h1>
+  <p style="text-align:center; max-width:800px; margin:0 auto 30px;">
+    Connect with organizations working to feed the hungry and reduce food waste
+  </p>
+
+  <div class="ngo-card">
+    <h3>Robin Hood Army</h3>
+    <p>Volunteer‑based NGO that redirects surplus restaurant food to the disadvantaged in various cities in India and abroad.</p>
+    <a href="https://robinhoodarmy.com" target="_blank" class="btn-small">Visit Website</a>
+  </div>
+
+  <div class="ngo-card">
+    <h3>No Food Waste (NFW)</h3>
+    <p>A movement/NGO focused on recovering untouched surplus food from events, restaurants and redistributing it to underprivileged communities across cities in India.</p>
+    <a href="https://nofoodwaste.org" target="_blank" class="btn-small">Visit Website</a>
+  </div>
+
+  <div class="ngo-card">
+    <h3>Niwala – Jaipur Food Donation</h3>
+    <p>An NGO in Jaipur working on food donation drives and minimizing food waste by efficiently distributing surplus food to communities in need.</p>
+    <a href="https://niwala.org" target="_blank" class="btn-small">Visit Website</a>
+  </div>
+
+  <div class="ngo-card">
+    <h3>Waste No Food</h3>
+    <p>A US‑based nonprofit that allows food service businesses to donate excess food to vetted charities and shelters, helping reduce food wastage.</p>
+    <a href="https://wastenofood.org" target="_blank" class="btn-small">Visit Website</a>
+  </div>
+
+  <div class="ngo-card">
+    <h3>Annamrita Foundation</h3>
+    <p>Major Indian NGO providing nutritious food through programs like Mid‑Day Meals, Khichdi Drive, and food relief initiatives to underprivileged communities.</p>
+    <a href="https://annamrita.org" target="_blank" class="btn-small">Visit Website</a>
+  </div>
+
+  <h2>How Our Website Helps NGOs</h2>
+  <div class="ngo-card">
+    <ul>
+      <li>🚚 <strong>Direct Access to Surplus Food Sources</strong> – Restaurants can upload excess food details, letting NGOs view and collect it quickly.</li>
+      <li>📍 <strong>Real‑time Notifications</strong> – NGOs receive timely alerts, so food is collected before it goes to waste.</li>
+      <li>📊 <strong>Dashboard and Analytics</strong> – Track available food items, pickup times, and impact metrics to better plan distributions.</li>
+      <li>🤝 <strong>Network Expansion</strong> – Helps NGOs collaborate with more donors and scale their reach to feed more people.</li>
+      <li>🌱 <strong>Reduce Waste, Fight Hunger</strong> – By connecting surplus food with NGOs, the platform helps reduce food waste while feeding underserved communities.</li>
+    </ul>
+  </div>
+
+</body>
+</html>
